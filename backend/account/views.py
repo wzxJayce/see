@@ -9,6 +9,7 @@ from utils.baseviews import MaxSizePagination, BaseView
 from utils.baseviews import ReturnFormatMixin as res
 from .serializers import *
 
+
 # Create your views here.
 
 class PermissionViewSet(BaseView):
@@ -20,6 +21,7 @@ class PermissionViewSet(BaseView):
     serializer_class = PermissionSerializer
     permission_classes = [IsSuperUser]
 
+
 class GroupViewSet(BaseView):
     '''
         系统组CURD
@@ -28,6 +30,7 @@ class GroupViewSet(BaseView):
     serializer_class = GroupSerializer
     permission_classes = [IsSuperUser]
     search_fields = ['name']
+
 
 class UserViewSet(BaseView):
     '''
@@ -43,6 +46,7 @@ class UserViewSet(BaseView):
 
     def perform_create(self, serializer):
         serializer.create(self.request.data)
+
 
 class PersonalCenterViewSet(PromptMixins, BaseView):
     '''

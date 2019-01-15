@@ -2,6 +2,7 @@ from rest_framework import permissions
 
 SAFE_METHODS = ('GET', 'HEAD', 'OPTIONS')
 
+
 class IsSuperUser(permissions.BasePermission):
     """
     Allows access only to super users.
