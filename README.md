@@ -128,6 +128,10 @@
 
 - Eclipse Public License - v 2.0
 
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/rootsongjc/kubernetes-handbook.svg)](https://starchart.cc/rootsongjc/kubernetes-handbook)
+
 Copyright © 2018 See
 
 
